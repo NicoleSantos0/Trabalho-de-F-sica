@@ -1,0 +1,142 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 50px; /* Espaço para o header fixo */
+    margin: 0;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+/* Navegação no header */
+nav ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #bfbebc; /* Altera a cor para dourado no hover */
+}
+
+/* Seções */
+section {
+    padding: 30px;
+    margin: 80px 0; /* Deixa espaço entre o header fixo e as seções */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Adiciona transição suave */
+}
+
+/* Efeito de hover nas seções */
+section:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do bloco */
+    opacity: 0.8; /* Torna o bloco levemente transparente */
+}
+
+/* Títulos */
+h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    cursor: pointer; /* Mudando o cursor para indicar interatividade */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h2:hover {
+    color: #c3c2c0; /* Cor dourada no hover */
+    transform: scale(1.05); /* Aumenta um pouco o tamanho do título */
+}
+
+/* Imagens */
+.imagem {
+    width: 25%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Lista de fontes */
+footer ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+footer ul li {
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    section {
+        margin: 20px 0;
+    }
+}
